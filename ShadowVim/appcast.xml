@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>ShadowVim</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Thu, 23 Feb 2023 19:30:27 +0100</pubDate>
+            <link>https://github.com/mickael-menu/ShadowVim</link>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim-0.1.0.zip" length="2043313" type="application/octet-stream" sparkle:edSignature="xlbUmSnO5iMUj4g5mGOE4ndiz9Yzt6PeNbJ/BTrVsaP2g4QiPqx4BYMiShiSNf+eR0gRFSRIo8gi6uCX3UfbAA=="/>
+            <sparkle:fullReleaseNotesLink>https://github.com/mickael-menu/ShadowVim/releases</sparkle:fullReleaseNotesLink>
+            <description><![CDATA[
+                <h2>0.1.0</h2>
+                <h3>Added</h3>
+                <ul>
+                    <li>Basic Neovim / UI buffer and cursor synchronization.</li>
+                    <li>Support for <b>Normal</b>, <b>Insert</b> and <b>Replace</b> modes.</li>
+                    <li>Neovim user commands to trigger UI keyboard shortcuts.</li>
+                </ul>
+            ]]></description>
+        </item>
+    </channel>
+</rss>
