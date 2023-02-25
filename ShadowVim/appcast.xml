@@ -3,13 +3,45 @@
     <channel>
         <title>ShadowVim</title>
         <item>
+            <title>0.1.1</title>
+            <pubDate>Sat, 25 Feb 2023 10:47:10 +0100</pubDate>
+            <link>https://github.com/mickael-menu/ShadowVim</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/mickael-menu/ShadowVim/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim-0.1.1.zip" length="2088159" type="application/octet-stream" sparkle:edSignature="hYwvae/rv86gDXvW4ADetuoVosdZEV6dFqtDsbhPvAraq32KyDJPQcv4QIdH7Y3fQ9CTt0qB7KYYjv9O+W05BQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim2-1.delta" sparkle:deltaFrom="1" length="200122" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="1377168" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="/nikoTx0tE+U4lhmKjSBm0rWv5exkDCNqXUg+b4TxBo38O9llt8Ij7t5dmTnmWtR8ulaK+Tj+r5ui+i4WIjQAA=="/>
+            </sparkle:deltas>
+            <description><![CDATA[
+                <h2>0.1.1</h2>
+                <h3>Added</h3>
+                <ul>
+                    <li>
+                        Xcode's settings are automatically updated to prevent conflicts when running ShadowVim.
+                        <ul>
+                            <li>The user is prompted with a bunch of terminal commands reverting the changes.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Fixed</h3>
+                <ul>
+                    <li>Fix <b>Quit</b> and <b>Reset</b> buttons in the error dialogs.</li>
+                    <li>Fix synchronizing buffers with extra newlines at the end.</li>
+                    <li>Fix activating ShadowVim when restarting Xcode.</li>
+                    <li>Improve handling of some AX errors.</li>
+                </ul>
+            ]]></description>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Thu, 23 Feb 2023 19:30:27 +0100</pubDate>
             <link>https://github.com/mickael-menu/ShadowVim</link>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim-0.1.0.zip" length="2043313" type="application/octet-stream" sparkle:edSignature="xlbUmSnO5iMUj4g5mGOE4ndiz9Yzt6PeNbJ/BTrVsaP2g4QiPqx4BYMiShiSNf+eR0gRFSRIo8gi6uCX3UfbAA=="/>
+            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim-0.1.0.zip" length="2043313" type="application/octet-stream" sparkle:edSignature="xlbUmSnO5iMUj4g5mGOE4ndiz9Yzt6PeNbJ/BTrVsaP2g4QiPqx4BYMiShiSNf+eR0gRFSRIo8gi6uCX3UfbAA=="/>
             <sparkle:fullReleaseNotesLink>https://github.com/mickael-menu/ShadowVim/releases</sparkle:fullReleaseNotesLink>
             <description><![CDATA[
                 <h2>0.1.0</h2>
