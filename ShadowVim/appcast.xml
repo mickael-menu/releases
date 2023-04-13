@@ -3,6 +3,93 @@
     <channel>
         <title>ShadowVim</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Thu, 13 Apr 2023 20:11:03 +0200</pubDate>
+            <link>https://github.com/mickael-menu/ShadowVim</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/mickael-menu/ShadowVim/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim-0.2.0.zip" length="2134974" type="application/octet-stream" sparkle:edSignature="Qbs3iBT8/EZVkUSa8RU7fpelF2d+ZHDGlhOsJtBQGJvg7dggCfQlTOv8wIZCWS5k8EibhXLkZxH+xYqw/a1LBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim3-2.delta" sparkle:deltaFrom="2" length="463886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="1377168" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="ni0aDdNKc+TCncdLWpDukSOR4KrjR5BDknnPMEmrU1NN7YjEqq+3j+pysxCHHLJNyIRWQZgjt6uY8HSKqZMNAw=="/>
+                <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim3-1.delta" sparkle:deltaFrom="1" length="487478" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="1377168" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="WOQHfy5zjHv5GMoqic+5dZLEeiIG1oW6Y6vIG3y8daQmOLSfOJustF2onFflCpCfQmrrBSNuNHuavFzlu2DjBQ=="/>
+            </sparkle:deltas>
+            <description><![CDATA[
+                <h2>0.2.0</h2>
+                <h3>Added</h3>
+                <ul>
+                    <li>
+                        Support for Visual and Select modes feedback.
+                        <ul>
+                            <li>Block-wise selection (<code>C-v</code>) is displayed as character-wise because of a limitation with the Xcode accessibility APIs.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Open a Neovim terminal TUI for the embedded instance (requires Neovim 0.9).
+                        <ul>
+                            <li>This is useful to solve blocking prompts in Neovim, for instance.</li>
+                            <li>
+                                Activate from the status menu, or manually with:
+                                <pre>nvim --server /tmp/shadowvim.pipe --remote-ui</pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Use <code>SVPress</code> to trigger click events from Neovim bindings.
+                        <pre>
+" Show the Quick Help pop-up for the symbol at the caret location (<kbd>⌥ + Left Click</kbd>).
+nmap K <Cmd>SVPress <LT>M-LeftMouse><CR>
+
+" Perform a right click at the caret location.
+nmap gR <Cmd>SVPress <LT>RightMouse><CR>
+                        </pre>
+                    </li>
+                    <li>Use <code>SVSetInputUI</code> to let Xcode handle all key events.</li>
+                    <li>Use <code>SVSetInputNvim</code> to forward key events to Neovim, even in Insert mode.</li>
+                    <li>
+                        Use <code>SVOpenTUI</code> to launch a Terminal window with a Neovim text user interface of the embedded Neovim instance.
+                        <ul>
+                            <li>This is useful to solve issues with Neovim such as a blocking prompt.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Deprecated</h3>
+                <ul>
+                    <li><code>SVEnableKeysPassthrough</code> is deprecated in favor of the new <code>SVSetInputUI</code> command.</li>
+                </ul>
+                <h3>Changed</h3>
+                <ul>
+                    <li>
+                        The Insert mode is now handled by Xcode to improve performance, auto-completion and indentation.
+                        <ul>
+                            <li>ShadowVim does not need to override your Xcode editing settings anymore.</li>
+                            <li>Unfortunately, that means that Neovim Insert features are unavailable (e.g. <code>iab</code> abbreviations or <code>imap</code> mappings).</li>
+                        </ul>
+                    </li>
+                    <li><code>SVPressKeys</code> was renamed to <code>SVPress</code>.</li>
+                    <li>
+                        <code>SVPress</code> now emits the keyboard shortcut system-wide instead of only in the Xcode process.
+                        <ul>
+                            <li>
+                                This can be used to have a custom passthrough for hot keys (e.g. <code>⌥`</code> to open iTerm) by adding this to your <code>init.vim</code>:
+                                <pre>
+if exists('g:shadowvim')
+    map <A-`> <Cmd>SVPressKeys <LT>A-`><CR>
+endif
+                                </pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>The system paste shortcut (<code>⌘V</code>) is now overridden and handled by Neovim to improve performances and the undo history.</li>
+                </ul>
+                <h3>Fixed</h3>
+                <ul>
+                    <li>Significantly improve performance when applying changes from Neovim.</li>
+                </ul>
+            ]]></description>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Sat, 25 Feb 2023 10:47:10 +0100</pubDate>
             <link>https://github.com/mickael-menu/ShadowVim</link>
