@@ -3,6 +3,29 @@
     <channel>
         <title>ShadowVim</title>
         <item>
+            <title>0.2.1</title>
+            <pubDate>Sun, 09 Jul 2023 15:07:06 +0200</pubDate>
+            <link>https://github.com/mickael-menu/ShadowVim</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/mickael-menu/ShadowVim/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim-0.2.1.zip" length="2137359" type="application/octet-stream" sparkle:edSignature="KbeEvi3lPq8npuSrLZwLsGF29N9Pb3kr/YiQzDhh4086tEJBAASM21gxasoi1fpR3Xr7kEPPH/2g7Fm8LY2eCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim4-3.delta" sparkle:deltaFrom="3" length="197970" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="1377168" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="D2Xt9QN6wRrbCGo6Iy/Jk0eT3113JlffTzC0zHWuIKHi4ti4wwU2MjNeTWU/tCe4x25BZ7VlSMCvCoI7vQx0CA=="/>
+                <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim4-2.delta" sparkle:deltaFrom="2" length="546150" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="1377168" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="Zo75ar2+xQJRuI5PHdXGwbzAf2rBoZXt6YHsjQjCq+jTaiUDrsO9eq6IszPLAqWQ5OY9B1kPBLPZ6WWnmEXwAA=="/>
+                <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim4-1.delta" sparkle:deltaFrom="1" length="571442" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="1377168" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="6HDHcqhgEGbteTX2kB3xIYzxBMQUpIhwSenLwgG/0aKUKA8CF7Js2vSG5+MIrW7qbhTt3e6BkaMbSj4UAx50AA=="/>
+            </sparkle:deltas>
+            <description><![CDATA[
+                <h2>0.2.1</h2>
+                <h3>Fixed</h3>
+                <ul>
+                    <li><a href="https://github.com/mickael-menu/ShadowVim/issues/50">#50</a> Fix issue where the cursor position is not updated when using third-party plugins like <code>chaoren/vim-wordmotion</code>.</li>
+                    <li><a href="https://github.com/mickael-menu/ShadowVim/issues/56">#56</a> Add a passthrough for Fn-based keyboard shortcuts.</li>
+                </ul>
+            ]]></description>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Thu, 13 Apr 2023 20:11:03 +0200</pubDate>
             <link>https://github.com/mickael-menu/ShadowVim</link>
@@ -118,25 +141,6 @@ endif
                     <li>Fix synchronizing buffers with extra newlines at the end.</li>
                     <li>Fix activating ShadowVim when restarting Xcode.</li>
                     <li>Improve handling of some AX errors.</li>
-                </ul>
-            ]]></description>
-        </item>
-        <item>
-            <title>0.1.0</title>
-            <pubDate>Thu, 23 Feb 2023 19:30:27 +0100</pubDate>
-            <link>https://github.com/mickael-menu/ShadowVim</link>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://mickael-menu.github.io/releases/ShadowVim/ShadowVim-0.1.0.zip" length="2043313" type="application/octet-stream" sparkle:edSignature="xlbUmSnO5iMUj4g5mGOE4ndiz9Yzt6PeNbJ/BTrVsaP2g4QiPqx4BYMiShiSNf+eR0gRFSRIo8gi6uCX3UfbAA=="/>
-            <sparkle:fullReleaseNotesLink>https://github.com/mickael-menu/ShadowVim/releases</sparkle:fullReleaseNotesLink>
-            <description><![CDATA[
-                <h2>0.1.0</h2>
-                <h3>Added</h3>
-                <ul>
-                    <li>Basic Neovim / UI buffer and cursor synchronization.</li>
-                    <li>Support for <b>Normal</b>, <b>Insert</b> and <b>Replace</b> modes.</li>
-                    <li>Neovim user commands to trigger UI keyboard shortcuts.</li>
                 </ul>
             ]]></description>
         </item>
